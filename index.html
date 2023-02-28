@@ -14,16 +14,16 @@
         <link rel="stylesheet" href="">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
-        <title> Responsive portfolio website Ansel </title>
+        <title> Dharshan's Portfolio</title>
     </head>
     <body>
         
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav_logo">Dharshan Kumar</a>
+                <a href="#" class="nav__logo">Dharshan Kumar</a>
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -40,7 +40,7 @@
 
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
-                                <i class='bx bx-book'></i>
+                                <i class='bx bxs-book'></i>
                             </a>
                         </li>
 
@@ -82,7 +82,7 @@
                     </div>
 
                     <div class="home__handle">
-                        <img src="assets/img/profile1.jpg" alt="" class="home__img">
+                        <img src="assets/img/Bitmoji.jpeg" alt="" class="home__img">
                     </div>
 
                     <div class="home__social">
@@ -92,10 +92,19 @@
                         <a href="https://github.com/Dharshan-Kumar" class="home__social-link">
                             <i class='bx bxl-github' ></i>
                         </a>
-                        <a href="https://github.com/Dharshan-Kumar" class="home__social-link">
+                        <a href="https://www.instagram.com/dhachu._.10/" class="home__social-link">
                             <i class='bx bxl-instagram' ></i>
                         </a>
+                        <a href="https://api.whatsapp.com/send?phone=919597533866&text=Hello,more information!" class="home__social-link">
+                            <i class='bx bxl-whatsapp' ></i>
+                        </a>
+                        <a href="https://twitter.com/dhachu_10_" class="home__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
                     </div>
+                    <a href="" class="home__scroll">Scroll Down</a>
+
+
                 </div>
             </section>
             
@@ -193,24 +202,141 @@
                 </div>
             </section>
 
-            <!--=============== SERVICES ===============-->
-            <section class="services section">
-                
-            </section>
+            <!--=============== PROJECT ===============-->
+            <section class="project section">
+                <h2 class="section__title">My Projects</h2>
 
-            <!--=============== WORK ===============-->
-            <section class="work section" id="work">
-                
-            </section>
+                <div class="services__container container grid">
+                    <div class="project__card">
+                        <h3 class="project__title">Meme App</h3>
 
-            <!--=============== TESTIMONIALS ===============-->
-            <section class="testimonial section">
-                
+                        <span class="project__button ">
+                            See More <i class='bx bxs-right-arrow-circle project__icon' ></i>
+                        </span>
+
+                        <div class="project__modal ">
+                            <div class="project__modal-content">
+                                <i class="bx bx-x project__modal-close"></i>
+
+                                <h3 class="project__modal-title">Meme App</h3>
+                                <p class="project__modal-description">
+                                    An application which continously fetches memes which can be viewed ,downloaded and shared
+                                </p>
+
+                                <ul class="project__modal-list">
+                                    <li class="project__modal-item">
+                                        <i class="bx bx-check project__modal-icon"></i>
+                                        <p class="project__modal-info">XML</p>
+                                    </li>
+
+                                    <li class="project__modal-item">
+                                        <i class="bx bx-check project__modal-icon"></i>
+                                        <p class="project__modal-info">Java</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card ">
+                        <h3 class="project__title">Object Detection</h3>
+
+                        <span class="project__button">
+                            See More <i class='bx bxs-right-arrow-circle project__icon'></i>
+                        </span>
+                        <div class="project__modal">
+                            <div class="project__modal-content">
+                                <i class="bx bx-x project__modal-close"></i>
+
+                                <h3 class="project__modal-title">Object Detection</h3>
+                                <p class="project__modal-description">
+                                    An application which detects what the object is and pronounce it when the object is scanned by a camera
+                                </p>
+
+                                <ul class="project__modal-list">
+                                    <li class="project__modal-item">
+                                        <i class="bx bx-check project__modal-icon"></i>
+                                        <p class="project__modal-info">Python</p>
+                                    </li>
+
+                                    <li class="project__modal-item">
+                                        <i class="bx bx-check project__modal-icon"></i>
+                                        <p class="project__modal-info">Machine Learning</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--=============== CONTACT ===============-->
             <section class="contact section" id="contact">
-                
+                <span class="section__subtitle">Get in touch</span>
+                <h2 class="section__title">Contact Me</h2>
+
+                <div class=".contact__container  container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Talk to me</h3>
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class="bx bx-mail-send contact__card-icon"></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">dharshankumar1105@gmail.com</span>
+
+                                <a href="mailto:dharshankumar1105@gmail.com"  target="_blank"
+                                class="contact__button">Write me 
+                                <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class="bx bxl-whatsapp contact__card-icon"></i>
+                                <h3 class="contact__card-title">Whatsapp</h3>
+                                <span class="contact__card-data">9597533866</span>
+
+                                <a href="https://api.whatsapp.com/send?phone=919597533866&text=Hello,more information!"  target="_blank"
+                                class="contact__button">Write me 
+                                <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class="bx bxl-instagram contact__card-icon"></i>
+                                <h3 class="contact__card-title">Instagram</h3>
+                                <span class="contact__card-data">dhachu._.10</span>
+
+                                <a href="https://ig.me/m/dhachu._.10/"  target="_blank"
+                                class="contact__button">Write me 
+                                <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">Write me your message</h3>
+
+                        <form action="" class="contact__form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Name</label>
+                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Mail</label>
+                                <input type="email" placeholder="Insert your email" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Message</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your message" type="text" class="contact__form-input"></textarea>
+                            </div>
+                            <button class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
             </section>
         </main>
     

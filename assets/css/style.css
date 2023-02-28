@@ -125,8 +125,8 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 100%;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .grid {
@@ -177,7 +177,7 @@ img {
 }
 
 .nav__logo{
-  color: var(--first-color);
+  color:var(--first-color);
   font-weight: var(--font-medium);
   transition: .4s;
 }
@@ -190,10 +190,12 @@ img {
   position: fixed;
   bottom: 1rem;
   background-color: hsl(var(--second-hue), 32%, 16%,.8);
-  width:90%;
+  width:80%;
+  /* justify-content: center; */
   border-radius: 4rem;
   padding:1rem 2.25rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  
 }
 
 .nav__list{
@@ -209,6 +211,7 @@ img {
   display: flex;
   border-radius: 5rem;
 }
+
 /* Active link */
 .active-link{
   background: linear-gradient(180deg,
@@ -216,7 +219,6 @@ img {
     hsla(var(--first-hue), var(--sat), var(--lig), .2)
   );
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
-
 }
 
 /* Change background header */
@@ -295,8 +297,9 @@ img {
   color:var(--first-color);
   padding: .25rem;
   display:flex;
-  font-size: 1rem;
+  font-size: 2rem;
   transition:.4s;
+  border-radius: 1rem;
 }
 
 .home__social-link:hover{
@@ -304,12 +307,14 @@ img {
   color:#ffffff;
 }
 
-.home__social::after{
-  content: '';
-  width:32px;
-  height:2px;
-  background-color: var(--first-color);
-  transform: rotate(90deg) translate(16px,3px);
+.home__scroll{
+  color: var(--first-color);
+  right: -1.5rem;
+  bottom: 4rem;
+  display: grid;
+  row-gap: 2.25rem;
+  justify-items: center;
+  font-size: var(--smaller-font-size);
 }
 
 /*=============== BUTTONS ===============*/
@@ -429,30 +434,213 @@ img {
 .skills__level{
   font-size: var(--tiny-font-size);
 }
-/*=============== SERVICES ===============*/
+/*=============== PROJECT ===============*/
+.project__container{
+  grid-template-columns:repeat(2,1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
 
+.project__card{
+  background-color: var(--container-color);
+  padding: 3rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+}
 
-/* Services modal */
+.project__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 2.5rem;
+}
 
+.project__button{
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  cursor: pointer;
+}
 
+.project__button:hover .project__icon{
+  transform: translateX(.25rem);
+}
+
+.project__icon{
+  font-size: 1rem;
+  transition: .4s;
+}
+
+/* Project modal */
+.project__modal{
+  position: fixed;
+  inset: 0;
+  background-color: hsla(var(--second-hue),28%,16%, .7);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+  z-index: var(--z-modal);
+}
+
+.project__modal-content{
+  position: relative;
+  background-color: var(--body-color);
+  padding: 4.5rem 1.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.project__modal-title,
+.project__modal-description{
+  text-align: center;
+}
+
+.project__modal-title{
+  font-size: var(--h3-font-size);
+  color:var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.project__modal-description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.project__modal-list{
+  display: grid;
+  row-gap: .75rem;
+}
+
+.project__modal-item{
+  display: flex;
+  align-items: flex-start;
+  column-gap: .5rem;
+}
+
+.project__modal-icon{
+  font-size: 1.5rem;
+  color:var(--first-color);
+}
+
+.project__modal-info{
+  font-size: var(--small-font-size);
+}
+
+.project__modal-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
 /*Active modal*/
-
-
-/*=============== WORK ===============*/
-
-
-/* Active item work*/
-
-
-/*=============== TESTIMONIAL ===============*/
-
-
-/* Swiper class */
-
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
 
 /*=============== CONTACT ===============*/
+.contact__container{
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
 
+.contact__title{
+  text-align: center;
+  font-size: var(--h3-font-size);
+  margin-bottom:1.5rem;
+}
 
+.contact__info{
+  display: grid;
+  gap: 1rem;
+}
+
+.contact__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: .75rem;
+  text-align: center;
+}
+
+.contact__card-icon{
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+
+.contact__card-title,
+.contact__card-data{
+  font-size: var(--small-font-size);
+}
+
+.contact__card-title{
+  font-weight: var(--font-medium);
+}
+
+.contact__card-data{
+  display: block;
+  margin-bottom: .75rem;
+}
+
+.contact__button{
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  column-gap: .25rem;
+}
+
+.contact__button:hover .contact__button-icon{
+  transform: translateX(.25rem);
+}
+
+.contact__button-icon{
+  font-size: 1rem;
+  transition: .4s;
+}
+
+.contact__form-div{
+  position: relative;
+  margin-bottom: 2rem;
+  height: 4rem;
+}
+
+.contact__form-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--text-color-light);
+  background: none;
+  color:var(--text-color);
+  outline: none;
+  padding: 1.5rem;
+  border-radius: .75rem;
+  z-index: 1;
+}
+
+.contact__form-tag{
+  position: absolute;
+  top: -.75rem;
+  left: 1.25rem;
+  font-size: var(--smaller-font-size);
+  padding: .25rem;
+  background-color: var(--body-color);
+  z-index: 10;
+}
+
+.contact__form-area{
+  height: 11rem;
+}
+
+.contact__form-area textarea{
+  resize: none;
+}
 /*=============== FOOTER ===============*/
 
 
