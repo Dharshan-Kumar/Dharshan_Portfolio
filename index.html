@@ -5,13 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/Bitmoji.jpeg" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -21,53 +18,25 @@
     <body>
         
         <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Dharshan Kumar</a>
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bxs-home-heart'></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class='bx bxs-user'></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bxs-book'></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#project" class="nav__link">
-                                <i class='bx bxs-briefcase-alt-2'></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class='bx bxs-contact'></i>
-                            </a>
-                        </li>
+            <nav class="navbar">
+                <div class="max-width">
+                    <div class="nav__logo">
+                        <a href="#"><i class='bx bx-wink-smile'></i> DHARSHAN KUMAR</a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#home"><i class='bx bxs-home-heart'></i>Home</a></li>
+                        <li><a href="#about"><i class='bx bxs-user'></i>About</a></li>
+                        <li><a href="#skills"><i class='bx bxs-book'></i>Skills</a></li>
+                        <li><a href="#project"><i class='bx bxs-briefcase-alt-2'></i>Project</a></li>
+                        <li><a href="#contact"><i class='bx bxs-contact'></i>Contact</a></li>
                     </ul>
                 </div>
-                <!-- Theme Change Button  -->
-                <i class='bx bx-moon change-theme' id="theme-button"></i> 
             </nav>
-        </header>
-        
-        <!--=============== MAIN ===============-->
-        
+        <!--=============== MAIN ===============-->    
         <main class="main">
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
-                <div class="home__container container grid">
+                <div class="home__container container_ grid">
                     <div class="home__data">
                         <span class="home__greeting">Hello,I'm</span>
                         <h1 class="home__name">Dharshan Kumar</h1>
@@ -86,25 +55,22 @@
                     </div>
 
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/dharshankumar10/" class="home__social-link">
+                        <a href="https://www.linkedin.com/in/dharshankumar10/" target="_blank" class="home__social-link">
                             <i class='bx bxl-linkedin'></i>
                         </a>
-                        <a href="https://github.com/Dharshan-Kumar" class="home__social-link">
+                        <a href="https://github.com/Dharshan-Kumar" target="_blank" class="home__social-link">
                             <i class='bx bxl-github' ></i>
                         </a>
-                        <a href="https://www.instagram.com/dhachu._.10/" class="home__social-link">
+                        <a href="https://www.instagram.com/dhachu._.10/" target="_blank" class="home__social-link">
                             <i class='bx bxl-instagram' ></i>
                         </a>
                         <a href="https://api.whatsapp.com/send?phone=919597533866&text=Hello,more information!" class="home__social-link">
                             <i class='bx bxl-whatsapp' ></i>
                         </a>
-                        <a href="https://twitter.com/dhachu_10_" class="home__social-link">
+                        <a href="https://twitter.com/dhachu_10_" target="_blank" class="home__social-link">
                             <i class='bx bxl-twitter' ></i>
                         </a>
                     </div>
-                    <a href="" class="home__scroll">Scroll Down</a>
-
-
                 </div>
             </section>
             
@@ -113,8 +79,8 @@
                 <span class="section__subtitle">My Intro</span>
                 <h2 class="section__title">About Me</h2>
 
-                <div class="about__container container grid">
-                    <img src="assets/img/profile1.jpg" alt="" class="about__img">
+                <div class="about__container container_ grid">
+                    <img src="assets/img/Bitmoji.jpeg" alt="" class="about__img">
 
                     <div class="about__data">
                         <div class="about__info">
@@ -135,9 +101,9 @@
 
             <!--=============== SKILLS ===============-->
             <section class="skills section" id="skills">
-                <h2 class="section__title">My Abilities</h2>
+                <h2 class="section__title">My Skills</h2>
 
-                <div class="skills__container container grid">
+                <div class="skills__container container_ grid">
                     <div class="skills__content">
                         <!-- <h3 class="skills__title">Computer Engineer</h3> -->
                         <div class="skills__box">
@@ -201,20 +167,19 @@
                     </div>
                 </div>
             </section>
-
             <!--=============== PROJECT ===============-->
-            <section class="project section">
+            <section class="project section" id="project">
                 <h2 class="section__title">My Projects</h2>
 
-                <div class="services__container container grid">
+                <div class="project__container container_ grid">
                     <div class="project__card">
                         <h3 class="project__title">Meme App</h3>
 
-                        <span class="project__button ">
+                        <span class="project__button">
                             See More <i class='bx bxs-right-arrow-circle project__icon' ></i>
                         </span>
 
-                        <div class="project__modal ">
+                        <div class="project__modal">
                             <div class="project__modal-content">
                                 <i class="bx bx-x project__modal-close"></i>
 
@@ -275,7 +240,7 @@
                 <span class="section__subtitle">Get in touch</span>
                 <h2 class="section__title">Contact Me</h2>
 
-                <div class=".contact__container  container grid">
+                <div class=".contact__container  container_ grid">
                     <div class="contact__content">
                         <h3 class="contact__title">Talk to me</h3>
                         <div class="contact__info">
@@ -339,24 +304,40 @@
 
             </section>
         </main>
-    
-
         <!--=============== FOOTER ===============-->
         <footer class="footer">
-            
+            <div class="footer__container">
+                <h1 class="footer__title">Dharshan Kumar</h1>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#project" class="footer__link">Project</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.instagram.com/dhachu._.10/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="https://twitter.com/dhachu_10_" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-snapchat'></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">&#169 Dharshan Kumar. All rights reserved</span>
+            </div>
         </footer>
-
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
-
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
-
-        <!--=============== MIXITUP FILTER ===============-->
-        <script src=""></script>
-
         <!--=============== MAIN JS ===============-->
-        <script src=""></script>
-    
+        <script src="./assets/js/main.js"></script>
+
+
     </body>
 </html>
